@@ -10,7 +10,6 @@ terraform {
 }
 
 module "pet" {
-  source  = "app.terraform.io/tianda/pet/random"
-  pet_length = 1
-  pet_prefix = "module"
+  source  = "tfe.tianda-terraform.click/tfe-org/pet/random"
+  version = "0.0.2"
 }
